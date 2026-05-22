@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSPS Lamesin Nyo - Nouveau Modèle d'Adhésion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Petits ajouts de styles pour organiser les grilles proprement */
+        .grid-photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .grid-videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .media-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="images/logo-dsps-lamesin.png" alt="DSPS Lamesin Nyo" style="height: 65px; width: auto; display: block; vertical-align: middle;">
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#accueil">Accueil ▾</a>
+                <ul class="submenu">
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#videos">Vidéos</a></li>
+                </ul>
+            </li>
+            <li><a href="#adhesion">Comment Adhérer</a></li>
+            <li><a href="#cotisations">Cotisations</a></li>
+            <li><a href="#panier">Panier de Soins</a></li>
+            <li><a href="#" class="btn-client">Espace Adhérent</a></li>
+        </ul>
+    </nav>
+</header>
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="badge">Informations clés à retenir</div>
+            <h1>Nouveau Modèle d'Adhésion</h1>
+            <p>Une protection santé collective, accessible et humaine pour toute la famille.</p>
+            <a href="#adhesion" class="btn-main">Devenir Membre</a>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <div class="card box-1">
+            <div class="card-num">1</div>
+            <h3>Changement de modèle d'adhésion</h3>
+            <h4>Adhésion volontaire groupée</h4>
+            <p class="date-info">Entrée en vigueur : Janvier 2026</p>
+            <ul>
+                <li>Former un groupe* d'au moins <strong>10 personnes</strong>.</li>
+                <li>Durée : 6 mois ou 12 mois de couverture.</li>
+                <li><strong>3 Ayants-droits</strong> inclus dans l'adhésion.</li>
+                <li>Âge maximum des enfants : <strong>23 ans</strong>.</li>
+            </ul>
+            <p class="footnote">*Groupe AS</p>
+        </div>
+
+        <div class="card box-2" id="adhesion">
+            <div class="card-num">2</div>
+            <h3>Comment adhérer ?</h3>
+            <ol>
+                <li><strong>Former un groupe d'au moins 10 personnes :</strong>
+                    <ul>
+                        <li>Frais de cotisation</li>
+                        <li>Informations / photo des ayants droit</li>
+                    </ul>
+                </li>
+                <li>Le point focal du groupe contacte le superviseur LN.</li>
+                <li>Un animateur Lamesin Nyo enregistre les informations et délivre un reçu.</li>
+                <li>La carte mutuelle est remise à la réunion suivante.</li>
+            </ol>
+            <div class="note-box">
+                Les personnes déjà sous contrat peuvent rejoindre le groupe en complétant les cotisations manquantes.
+            </div>
+        </div>
+
+        <div class="card box-3" id="cotisations">
+            <div class="card-num">3</div>
+            <h3>Montant des cotisations</h3>
+            
+            <div class="table-title">Cotisation pour 6 mois</div>
+            <table>
+                <tr><td>10 à 14 membres</td><td><strong>18 000 FCFA</strong></td></tr>
+                <tr><td>15 à 19 membres</td><td><strong>15 000 FCFA</strong></td></tr>
+                <tr><td>20 membres et +</td><td><strong>12 000 FCFA</strong></td></tr>
+            </table>
+
+            <div class="table-title">Cotisation pour 12 mois</div>
+            <table>
+                <tr><td>10 à 14 s</td><td><strong>30 000 FCFA</strong></td></tr>
+                <tr><td>15 à 19 membres</td><td><strong>24 000 FCFA</strong></td></tr>
+                <tr><td>20 membres et +</td><td><strong>18 000 FCFA</strong></td></tr>
+            </table>
+            <p class="highlight-text">Plus le groupe est grand et la durée longue, plus la cotisation diminue.</p>
+        </div>
+
+        <div class="card box-4" id="panier">
+            <div class="card-num">4</div>
+            <h3>Panier de soins</h3>
+            
+            <div class="coverage-block high">
+                <h4>Prise en charge à 100 %</h4>
+                <ul>
+                    <li>Consultations médicales</li>
+                    <li>Hospitalisations médicales et chirurgicales</li>
+                    <li>Accouchements</li>
+                </ul>
+            </div>
+
+            <div class="coverage-block medium">
+                <h4>Prise en charge à 50 %</h4>
+                <ul>
+                    <li>Soins primaires et spécialisés</li>
+                </ul>
+            </div>
+
+            <div class="exclusions-block">
+                <h4>Exclusions :</h4>
+                <p>Maladies chroniques (Cancer, Diabète, Drépanocytose, Hypertension artérielle), vitamines, prothèses, lunettes, scanner, IRM, Oxygène, ...</p>
+            </div>
+        </div>
+
+        <div class="card box-5">
+            <div class="card-num">5</div>
+            <h3>Calendrier de mise en couvre</h3>
+            <ul class="timeline">
+                <li><strong>23 février 2026 :</strong> Début des grandes sensibilisations.</li>
+                <li><strong>Mars 2026 :</strong> Préparation des processus de transmission.</li>
+                <li><strong>Avril 2026 :</strong> Début de la couverture pour les groupes qui sont prêts.</li>
+            </ul>
+        </div>
+
+        <div class="card box-6">
+            <div class="card-num">6</div>
+            <h3>Hospitalisation : procédure</h3>
+            <ul>
+                <li>Médecin et bénéficiaire informent la mutuelle.</li>
+                <li>Délivrance de l'entente préalable.</li>
+            </ul>
+            <div class="delai-box">
+                <strong>Délais :</strong> 24 h (jours ouvrés) / 48 h (week-end et jours fériés)
+            </div>
+            <div class="urgence-box">
+                <strong>🚨 Urgence vitale :</strong> Appel immédiat à l'animateur FS pour validation rapide.
+            </div>
+        </div>
+
+        <div class="card box-7">
+            <div class="card-num">7</div>
+            <h3>Points clés à retenir</h3>
+            <ul class="check-list">
+                <li>✓ Adhésion volontaire et collective</li>
+                <li>✓ Minimum 10 membres par groupe</li>
+                <li>✓ Cotisation à 3000 FCFA/mois (dégressif)</li>
+                <li>✓ 3 ayants droit inclus</li>
+                <li>✓ 100 % et 50 % de prise en charge</li>
+                <li>✓ Pas de plafond de remboursement</li>
+                <li>✓ 1000F/mois pour un ayant-droit supplémentaire</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <section id="photos" class="container">
+        <h2 style="text-align: center; font-family: 'Poppins', sans-serif; margin-bottom: 25px;">Notre Galerie Photos</h2>
+        
+        <div class="grid-photos">
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo1.jpg" alt="Description de la photo 1" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Sensibilisation Groupe 1</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo2.jpg" alt="Description de la photo 2" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Remise de reçus</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo3.jpg" alt="Description de la photo 3" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Réunion communautaire</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo4.jpg" alt="Description de la photo 4" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Équipe d'animation</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo5.jpg" alt="Description de la photo 5" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Nouveaux adhérents</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo6.jpg" alt="Description de la photo 6" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Bureau de Lomé</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo7.jpg" alt="Description de la photo 7" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Distribution des cartes</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo8.jpg" alt="Description de la photo 8" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Session d'information</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo9.jpg" alt="Description de la photo 9" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Partenaires santé</p>
+            </div>
+            <div class="card" style="text-align: center; padding: 10px;">
+                <img src="images/photo10.jpg" alt="Description de la photo 10" class="media-img">
+                <p style="margin-top: 8px; font-weight: 600; font-size: 0.9em;">Assemblée Générale</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="container">
+        <h2 style="text-align: center; font-family: 'Poppins', sans-serif; margin-bottom: 25px;">Espace Vidéos & Tutoriels</h2>
+        
+        <div class="grid-videos">
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_1" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">1. Présentation du projet</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_2" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">2. Comment former un groupe</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_3" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">3. Explication des cotisations</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_4" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">4. Le panier de soins en détails</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_5" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">5. Procédure d'hospitalisation</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_6" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">6. Témoignage d'un membre</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_7" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">7. Rôle du point focal</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_8" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">8. Les cas d'urgence vitale</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_9" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">9. Reportage sensibilisation terrain</p>
+            </div>
+            <div class="card" style="padding: 12px; text-align: center;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_10" allowfullscreen></iframe>
+                </div>
+                <p style="margin-top: 12px; font-weight: 600; font-size: 0.95em;">10. FAQ - Réponses à vos questions</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contactez un conseiller Lamesin Nyo</h2>
+        
+        <div class="direct-contact-container">
+            <div class="contact-method email-box">
+                <span class="contact-icon">✉</span>
+                <h4>Par Email</h4>
+                <a href="mailto:elmod1997@gmail.com" class="contact-link">elmod1997@gmail.com</a>
+            </div>
+            
+            <div class="contact-method whatsapp-box">
+                <span class="contact-icon">💬</span>
+                <h4>Par WhatsApp</h4>
+                <div class="whatsapp-buttons">
+                    <a href="https://api.whatsapp.com/send?phone=22897980152" target="_blank" rel="noopener noreferrer" class="wa-btn">Discuter sur +228 97 98 01 52</a>
+                    <a href="https://api.whatsapp.com/send?phone=22879329140" target="_blank" rel="noopener noreferrer" class="wa-btn">Discuter sur +228 79 32 91 40</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-separator">ou utilisez le formulaire ci-dessous</div>
+
+        <form>
+            <input type="text" placeholder="Nom du responsable de groupe" required>
+            <input type="number" placeholder="Nombre de membres prévus" required>
+            <input type="email" placeholder="Adresse Email" required>
+            <textarea placeholder="Votre message ou question" rows="4" required></textarea>
+            <button type="submit">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 DSPS Lamesin Nyo - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
